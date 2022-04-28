@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- adding style as CSS -->
+
+<style> 
+input[type=text] {
+  width: 80%;
+  padding: 12px 10px;
+  margin: 8px 10px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+
+  <!-- adding bootsrap -->
+
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h2>Maintanance Request</h2>
+  <p>You can send your request information and wait for 3 business day to repsonse!</p> 
+</div>
+  <!-- making the form and name it for validation later -->
+
+  <h3>Please fill the data for request below:</h3>
+    <form method="POST" action="/post" name="myForm"> 
+        <label>Full Name:<input type="text" name="name" required></label>
+      
+        <br>
+        <label>Full Adress:<input type="text" name="adress" required></label>
+        <br>
+         <br>
+        <label>Customer ID:<input type="text" name="id" required></label>
+        <br>
+        <label>Maintenece Request:<br><textarea name="text"></textarea></label>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/view">View request status</a>
+
+</body>
+</html>

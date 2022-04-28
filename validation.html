@@ -1,0 +1,32 @@
+<script>
+    function validateRequestForm() {
+      let name = document.forms["myForm"]["name"].value;
+      let id = document.forms["myForm"]["id"].value;
+      let address = document.forms["myForm"]["address"].value;
+      let request = document.forms["myForm"]["text"].value;
+
+      if (name == "") {
+        alert("fill out name");
+        return false;
+      }
+
+      if (address.value == "") {
+           alert("Please fill address");
+            
+            return false;
+        }
+
+      if (id.value == "") {
+           alert("Please enter ID");
+           
+            return false;
+        }
+      if (request.value == "") {
+            alert("Please enter your request");
+          
+            return false;
+        }
+    return true;
+    }
+    </script>
+
